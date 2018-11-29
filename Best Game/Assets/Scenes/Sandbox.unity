@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 0
+  m_AmbientMode: 4
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
@@ -1072,6 +1072,7 @@ GameObject:
   - component: {fileID: 480491150}
   - component: {fileID: 480491149}
   - component: {fileID: 480491151}
+  - component: {fileID: 480491152}
   m_Layer: 10
   m_Name: Player1
   m_TagString: Untagged
@@ -1204,7 +1205,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.21506914, y: -0.47}
   serializedVersion: 2
-  m_Radius: 0.31705305
+  m_Radius: 0.23
 --- !u!61 &480491150
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1217,7 +1218,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.24323714, y: 0.13231754}
+  m_Offset: {x: 0.19786948, y: 0.13231754}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1228,7 +1229,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.59011745, y: 1.3831196}
+  m_Size: {x: 0.49938214, y: 1.3831196}
   m_EdgeRadius: 0
 --- !u!114 &480491151
 MonoBehaviour:
@@ -1242,7 +1243,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 480491145}
-  runSpeed: 70
+  animator: {fileID: 480491152}
+  runSpeed: 60
+--- !u!95 &480491152
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 480491144}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e3fb86b19086d409c8fb982cd62e7900, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &770634799
 GameObject:
   m_ObjectHideFlags: 0
