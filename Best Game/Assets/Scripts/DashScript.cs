@@ -40,7 +40,7 @@ public class DashScript : MonoBehaviour
                 playerRb.AddForce(-transform.right * dashForce);
             }
             durationVar -= Time.deltaTime;
-            if (durationVar < 0)
+            if (durationVar < 0.07)
             {
                 canDash = false;
                 durationVar = dashDuration;
